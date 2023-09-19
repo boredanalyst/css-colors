@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 2D Transforms</title>
+        <style>
+            * {
+                font-family:Arial, Helvetica, sans-serif;
+                transition:all ease-in-out 150ms;
+            }
+
+            body {
+                display:flex;
+            }
+
+            main {
+                margin:auto;
+                width:60%;
+            }
+
+            h1 {
+                font-size:15vh;
+                margin-bottom:0;
+            }
+
+            p {
+                margin-top:0;
+            }
+
+            article > section {
+                display:flex;
+                gap:1vh;
+                flex-direction:column;
+                
+            }
+
+            span {
+                padding:5vh;
+                height:40vh;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:3vh;
+                color:white;
+                flex:1;
+            }
+
+            span:first-of-type {
+                background:linear-gradient(to bottom right, yellow, yellowgreen 50%, black);
+                box-shadow:0.1vh 0.1vh hsl(0,50,0,0.5);
+                border-radius:2vh;
+            }
+
+            span:nth-of-type(2) {
+                background:linear-gradient(to bottom, rgb(115, 88, 236), rgb(129, 120, 180) 70%, white);
+                box-shadow:0.1vh 0.1vh hsl(0,50,0,0.5);
+                border-radius:2vh;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Colors</h1>
+            <p>CSS offers multiple ways to change colors.</p>
+            <p>You can use hex codes or six-character strings to decide colors.</p>
+            <hr align="left" width="50%">
+            <article>
+                <h2>We offer the following services.</h2>
+                <section>
+                    <span>
+                        linear-gradient(to bottom right, yellow, yellowgreen 50%, black)
+                    </span>
+                    <span>
+                        linear-gradient(to bottom, rgb(115, 88, 236), rgb(129, 120, 180) 70%, white)
+                    </span>
+            </article>
+        </main>
+    </body>
+</html>
